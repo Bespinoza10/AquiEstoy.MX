@@ -43,6 +43,7 @@ section#contact .form-group textarea.form-control {
 nav.navbar-default .navbar-nav > .active > a {
   background: none;
   color: #b27af2;
+
 }
 
 .navbar-default .nav li a:hover{
@@ -51,11 +52,51 @@ nav.navbar-default .navbar-nav > .active > a {
   transition: .3s ease-in-out all;
 }
 
+nav.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background-color: transparent;
+}
+
 .navbar-default .nav li a{
 /*   border-bottom: 1px soid #b27af2 !important; */
 /*   color: #b27af2 !important; */
   transition: .3s ease-in-out all;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 100;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2px;
 }
+
+
+.navbar-default .navbar-toggle{
+  border: none;
+  transition: .2s ease-in-out all;
+  -webkit-transition: .2s ease-in-out all;
+  -moz-transition: .2s ease-in-out all;
+  -o-transition: .2s ease-in-out all;
+}
+
+.navbar-default .navbar-toggle:hover{
+  background: none;
+  margin-right: 10px;
+  transition: .3s ease-in-out all;
+  -webkit-transition: .3s ease-in-out all;
+  -moz-transition: .3s ease-in-out all;
+  -o-transition: .3s ease-in-out all;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background: none;
+}
+
+
+
+
+
 
 /* header */
 
@@ -211,6 +252,8 @@ div.services-row{
     transition: .3s ease-in-out all;
   }
 
+
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover{
   background-color: rgba(50, 50, 50, 0.45) !important ;
 }
@@ -304,6 +347,56 @@ small-and-down: "(max-width: 600px)";
 small-and-up: "(min-width: 600px)";
 */
 
+
+
+@media (max-width:800px){
+  .navbar-default .navbar-collapse{
+    background: rgba(0, 0, 0, 0.57);
+  }
+
+  nav.navbar-default{
+    background-color: transparent;
+    border-bottom: 0px;
+  }
+  .navbar-default.navbar-shrink{
+    background-color: rgba(0, 0, 0, 0.37);
+  }
+  img.main-logo{
+    margin-top: -10px;
+    max-width: 140px !important;
+    transition: .1s ease-in-out all;
+    -webkit-transition: .1s ease-in-out all;
+    -moz-transition: .1s ease-in-out all;
+    -o-transition: .1s ease-in-out all;
+  }
+
+  .navbar-default.navbar-shrink .navbar-brand > .main-logo{
+    max-width: 160px !important;
+    -webkit-transition: .1s ease-in-out all;
+    -moz-transition: .1s ease-in-out all;
+    -o-transition: .1s ease-in-out all;
+  }
+  header{
+    background-attachment: scroll !important;
+    height: 80vh !important;
+  }
+  header .intro-text{
+    padding-top: 170px !important;
+  }
+
+  header .intro-text .intro-lead-in h1 {
+    font-size: 60px !important;
+  }
+
+  header .intro-text .intro-lead-in p{
+    font-size: 18px !important;
+  }
+
+  .portfolio-column-photo img{
+    width: 100% !important;
+  }
+}
+
 @media (max-width:640px){
   header{
     background-attachment: scroll !important;
@@ -335,4 +428,9 @@ small-and-up: "(min-width: 600px)";
   .foto{
     background-attachment: scroll;
   }
+
+  #contact{
+    background-attachment: scroll !important;
+  }
+
 }
