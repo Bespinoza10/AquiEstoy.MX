@@ -121,10 +121,10 @@ h2.section-heading{
   background-repeat: none;
   background-attachment: fixed;
   background-position: center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  -o-background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
   text-align: left;
   color: #fff;
 }
@@ -156,7 +156,7 @@ h2.section-heading{
 }
 
 div.services-row{
-  padding: 100px;
+  padding: 100px 0px;
   color: #fff !important;
 }
 
@@ -285,4 +285,54 @@ p.portfolio-sub-text{
   background: #fff;
   color: rgba(86, 53, 215, 0.48);
   transition: 1s ease-in-out all;
+}
+
+
+
+
+/*Media Queries*/
+
+/*
+xlarge-and-up: "(min-width: 1800px)";
+xxlarge-and-down: "(max-width: 1800px)";
+xlarge-and-up: "(min-width: 1200px)";
+xlarge-and-down: "(max-width: 1200px)";
+large-and-up: "(min-width: 993px)";
+medium-and-down: "(max-width: 992px)";
+medium-and-up: "(min-width: 992px)";
+small-and-down: "(max-width: 600px)";
+small-and-up: "(min-width: 600px)";
+*/
+
+@media (max-width:640px){
+  header{
+    background-attachment: scroll !important;
+    height: 80vh !important;
+  }
+  header .intro-text{
+    padding-top: 150px !important;
+  }
+
+  header .intro-text .intro-lead-in h1 {
+    font-size: 50px !important;
+  }
+
+  header .intro-text .intro-lead-in p{
+    font-size: 12px !important;
+  }
+  .web-dev{
+    background-attachment: scroll;
+  }
+
+  .videos{
+    background-attachment: scroll;
+  }
+
+  .graphic-design{
+    background-attachment: scroll;
+  }
+
+  .foto{
+    background-attachment: scroll;
+  }
 }
